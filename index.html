@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Euphoric Alchemist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Euphoric Alchemist</h1>
+    </header>
+
+    <div class="layout">
+        <!-- Left navigation -->
+        <nav class="sidebar" aria-label="Main navigation">
+            <button class="nav-btn active" data-page="products">Products</button>
+            <button class="nav-btn" data-page="services">Services</button>
+            <button class="nav-btn" data-page="contact">Contact Us</button>
+            <button class="nav-btn" data-page="links">Links</button>
+            <button class="nav-btn" data-page="etc">ETC</button>
+        </nav>
+
+        <!-- Right content area; pages swap in here -->
+        <main id="content" class="content">
+            <!-- Rendered by script.js -->
+        </main>
+    </div>
+
+    <!-- Cart drawer (only used on the Products page) -->
+    <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="cart-close" class="cart-close" aria-label="Close cart">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="cart-empty">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button id="checkout-btn" class="checkout-btn" disabled>Checkout</button>
+        </div>
+    </aside>
+    <div id="cart-overlay" class="cart-overlay" hidden></div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Euphoric Alchemist. Handmade with love.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
